@@ -1,0 +1,106 @@
+// BUTTTONS¡
+.button {
+  color: #fff;
+  height: 44px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 100px !important;
+  font-weight: 700;
+  width: 100%;
+  box-shadow: none;
+  margin: 8px 0 !important;
+  border: 0;
+
+  &--small {
+    height: 36px;
+    font-size: 14px;
+    margin-right: 8px !important;
+    width: auto;
+  }
+
+  .mat-ripple-element {
+    background-color: rgba(255, 255, 255, 0.17);
+  }
+
+  &--primary {
+    background: $bech_color;
+    color: #fff !important;
+  }
+
+  &--secondary {
+    background: #fff;
+    color: $bech_color !important;
+    border: 2px solid $bech_color !important;
+    overflow: hidden;
+
+    .mat-ripple-element {
+      background: rgba(255, 145, 0, 0.09);
+    }
+
+    &:disabled {
+      color: $font_color_lighter !important;
+      background-color: #fff !important;
+      box-shadow: none !important;
+      border: 2px solid $border_disable !important;
+
+      &:not([class*=mat-elevation-z]) {
+        box-shadow: none !important;
+      }
+    }
+    &:not([class*=mat-elevation-z]) {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12) !important;
+    }
+
+    &:not([disabled]):active:not([class*=mat-elevation-z]) {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18) !important;
+    }
+  }
+
+  &--accent {
+    background: $accent_color;
+    color: #fff !important;
+  }
+
+  &--link {
+    background: transparent;
+    color: $accent_color;
+    border: none;
+    box-shadow: none !important;
+    outline: none;
+    margin-top: 8px;
+    transition: 0.25s ease-in-out;
+
+    &:active {
+      color: $accent_color_2;
+    }
+
+    &:disabled {
+      color: $font_color_lighter !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+
+  &--accent,
+  &--primary {
+    &:not([class*=mat-elevation-z]) {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12) !important;
+    }
+
+    &:not([disabled]):active:not([class*=mat-elevation-z]) {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18) !important;
+    }
+
+    &:disabled {
+      color: $font_color_lighter !important;
+      background-color: $bg_disable !important;
+      box-shadow: none !important;
+
+      &:not([class*=mat-elevation-z]) {
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+
+

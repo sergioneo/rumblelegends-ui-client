@@ -1,0 +1,21 @@
+{
+  "METADATA": {
+    "STATUS": "0",
+    "DESCRIPCION": "OK"
+  },
+  "DATA": {
+    "data": {
+      "points": 2000,
+      "current": {
+        "pointsStart": 0,
+        "pointsEnd": 3009,
+        "level": "Nivel 1",
+        "idLevel": 1
+      },
+      "next": {
+        "idLevel": 2,
+        "level": "Nivel 2"
+      }
+    }
+  }
+}

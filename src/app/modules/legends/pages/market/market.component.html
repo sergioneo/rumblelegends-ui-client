@@ -1,0 +1,34 @@
+<header-component></header-component>
+
+<div class="message">
+  <span>join to purcharse a figther</span>
+</div>
+
+<div class="title">
+  <h1>MARKETPLACE</h1>
+</div>
+
+<tabs-component></tabs-component>
+
+<div class="search">
+  <input type="text" placeholder="Search, name, atributes or tags">
+  <img src="legends/assets/img/" alt="">
+</div>
+
+
+<div class="lists-cards">
+  <card-component *ngFor="let item of cardsService;" [card]="item"></card-component>
+</div>
+
+
+<div class="pager">
+  <span class="pager__active">1</span>
+  <span>2</span>
+  <span>3</span>
+  <span>4</span>
+  <span>5</span>
+  <span>6</span>
+</div>
+
+
+<footer-component></footer-component>

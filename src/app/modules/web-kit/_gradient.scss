@@ -1,0 +1,12 @@
+.gradient {
+ /* background:
+ linear-gradient(135deg, rgba(239,173,33,0) 40%,rgba(239,173,33,0.5) 70%,rgba(255,45,68,1) 100%),
+ linear-gradient(45deg, rgba(255,53,53,1) 46%,rgba(239,161,33,1) 91%);*/
+ background: url('data:image/svg+xml;utf8,#{$gradient01}');
+ background-size: 100% 100%;
+ background-position: top right;
+ background-repeat: no-repeat;
+ 
+
+}
+

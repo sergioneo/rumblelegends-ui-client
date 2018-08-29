@@ -1,0 +1,74 @@
+card-component {
+  color: #ffff;
+  .container-card {
+    width: 278px;
+    &__content {
+      &__single {
+        &__element{
+          position: absolute;
+          margin-top: -157px;
+          margin-left: 30px;
+          img {
+            height: 33px;
+            width: 28px;
+          }
+        }
+
+        &__picture {
+          position: absolute;
+          margin-top: -165px;
+          margin-left: 75px;
+          img {
+            height: 147px;
+            width: 120px;
+          }
+        }
+
+        &__content-heart {
+          position: absolute;
+          margin-top: -150px;
+          margin-left: 200px;
+          display: flex;
+
+          img {
+            height: 19px;
+            width: 19px;
+          }
+
+          span {
+            margin: 2px 0 0 5px;
+            font-size: 1em;
+            font-weight: normal;
+          }
+        }
+        &__background {
+          img {
+            height: 175px;
+          }
+        }
+
+        &__footer {
+          display: flex;
+          margin-top: 10px;
+
+          &__name {
+            flex: 1;
+            font-size:  1.5625em;
+            font-weight: normal;
+            margin: -4px 0px 0 13px;
+          }
+
+          &__price{
+            flex: 0.6;
+            font-size: 1.125em;
+
+            img {
+              margin: 0px 0px 0px -15px;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}

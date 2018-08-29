@@ -1,0 +1,19 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib/",
+  "editor.formatOnType": true,
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "vscode-icons",
+  "files.trimTrailingWhitespace": true,
+  "vsicons.projectDetection.autoReload": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "git.ignoreLegacyWarning": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "sublimeTextKeymap.promptV3Features": true,
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnSave": true,
+  "javascript.suggestionActions.enabled": false,
+  "scss.validate": false
+}

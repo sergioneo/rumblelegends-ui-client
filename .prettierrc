@@ -1,0 +1,25 @@
+{
+  "codeLens": false,
+  "renderWhitespace": "none",
+  "autoIndent": true,
+  "formatOnType": true,
+  "formatOnSave": true,
+  "wordWrap": "off",
+  "printWidth": 120,
+  "tabWidth": 2,
+  "useTabs": true,
+  "semi": true,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "parser": "typescript",
+  "hotExit": "onExit",
+  "defaultLanguage": "typescript",
+  "requirePragma": false,
+  "trailingComma": "es5",
+  "trailingCommas": {
+    "array": true,
+    "object": true,
+    "function": false
+  }
+}

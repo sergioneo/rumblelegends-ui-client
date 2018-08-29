@@ -1,0 +1,46 @@
+body {
+  background-image: url("web-kit/assets/img/background-1024.png");
+  background-color: #131326;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {}
+
+h2 {
+  font-size: 1.250em;
+}
+
+.web-kit-title-h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+@keyframes animatedBackground {
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+.table {
+  border: solid 1px #e2e2e2;
+  &__body {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 35px;
+    &__content {
+      flex: 1;
+      margin: 2px;
+    }
+    &:nth-child(even) {
+      .table__body__content {
+        background-color: #d9e9f5;
+      }
+    }
+  }
+}

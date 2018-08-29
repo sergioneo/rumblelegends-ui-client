@@ -1,0 +1,72 @@
+market-component {
+  .lists-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    card-component {
+      margin: 20px;
+    }
+  }
+  .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    border: 1px solid #4cd964;
+    margin: 23px;
+    span {
+      font-size: 0.875em;
+      color: #ffffff;
+      overflow: hidden;
+      outline:none;
+      cursor: pointer;
+    }
+  }
+
+  .search {
+    display: flex;
+    input {
+      flex: 1;
+      background-color: Transparent;
+      background-repeat:no-repeat;
+      margin: 23px;
+      border: 0;
+      border-bottom: solid 0.5px #4cd964;
+      font-size: 1.25em;
+      color: #ffffff;
+    }
+  }
+
+  .title {
+    color: #ffffff;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .pager{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    &__active:after {
+      position: absolute;
+      content: " ";
+      width: 25px;
+      height: 25px;
+      background-color: #4cd964;
+      border-radius: 28px;
+      margin: -2px 0 0 -15px;
+      z-index: -1;
+    }
+    &__active{
+      color: #000000!important;
+    }
+    span {
+      color: #ffffff;
+      font-size: 1.25em;
+      padding: 0 8px 0 8px;
+    }
+  }
+}

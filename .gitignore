@@ -1,0 +1,9 @@
+node_modules/
+dist/
+src/ngfactory/
+.DS_Store
+npm-debug.log
+testing
+reports/
+docs/
+coverage/

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="17px" viewBox="0 0 11 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="market" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="market-desktop---filter" transform="translate(-224.000000, -926.000000)" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(224.000000, 926.000000)">
+                <g id="Group">
+                    <polygon id="Shape" fill="#4A90E2" points="5.49832852 0 5.37823086 0.387290168 5.37823086 11.625554 5.49832852 11.739295 10.9966957 8.65573141"></polygon>
+                    <polygon id="Shape" fill="#4A90E2" points="5.49836719 0 0 8.65573141 5.49836719 11.7393357 5.49836719 6.28461871"></polygon>
+                    <polygon id="Shape" fill="#4A90E2" points="5.49832852 12.7270317 5.43065273 12.805305 5.43065273 16.8086216 5.49832852 16.9961923 10.9999613 9.64501727"></polygon>
+                    <polygon id="Shape" fill="#007AFF" points="5.49836719 16.9961353 5.49836719 12.7269746 0 9.64496019"></polygon>
+                    <polygon id="Shape" fill="#007AFF" points="5.49832852 11.7392827 10.9966098 8.65575995 5.49832852 6.28464724"></polygon>
+                    <polygon id="Shape" fill="#007AFF" points="3.8671875e-05 8.65576403 5.49831992 11.7392868 5.49831992 6.28465132"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
