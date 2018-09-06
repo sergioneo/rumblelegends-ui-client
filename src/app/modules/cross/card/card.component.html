@@ -1,6 +1,6 @@
 <div class="container-card">
   <div class="container-card__content">
-    <!--<div class="container-card__content__single">
+    <div class="container-card__content__single">
       <div class="container-card__content__single__background">
         <img src="cross/assets/img/marco_card_single.png" alt="Marco Card">
       </div>
@@ -9,26 +9,24 @@
         <img src="cross/assets/img/icn_element.png" alt="Marco Card">
       </div>
       <div class="container-card__content__single__picture">
-        <img src="cross/assets/img/unicornio.png" alt="Marco Card">
+        <img [src]="card.image_url" alt="Marco Card">
       </div>
 
 
 
       <div class="container-card__content__single__content-heart">
         <img src="cross/assets/img/heart.png" alt="Marco Card">
-        <span>4579</span>
+        <span>{{card.likes}}</span>
       </div>
 
       <div class="container-card__content__single__footer">
-        <span class="container-card__content__single__footer__name">GODZILA</span>
+        <span class="container-card__content__single__footer__name">{{card.name}}</span>
         <div class="container-card__content__single__footer__price">
           <img src="cross/assets/img/icn_ethereum.svg" alt="Marco Card">
-          <span>0.02</span>
-          <span> / US $25</span>
+          <span>{{eth}}</span>
+          <span> / US ${{usd}}</span>
         </div>
       </div>
-    </div>-->
-    <div [innerHtml]="card.card | safehtml">
     </div>
   </div>
 

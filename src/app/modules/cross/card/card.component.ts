@@ -10,6 +10,8 @@ import { CardsProvider } from '../../legends/providers';
 export class CardComponent implements OnInit {
 	@Input()
 	private card: any = {};
+	private eth: string = '-';
+	private usd: string = '-';
 
 	constructor(private cardsProvider: CardsProvider) {}
 	public ngOnInit() {
@@ -19,19 +21,10 @@ export class CardComponent implements OnInit {
 	public callPricing() {
 		this.cardsProvider.getPricing(this.card.pricing).subscribe(
 			(data) => {
-				this.innerHtml(`ether-${this.card.id}`, `${data.eth} /`);
-				this.innerHtml(`us-${this.card.id}`, `US $${data.usd}`);
+				this.eth = data.eth;
+				this.usd = data.usd;
 			},
 			(err) => {}
 		);
-	}
-
-	innerHtml(value, price) {
-		try {
-			document.getElementById(value).innerHTML = price;
-			document.getElementById(value).innerHTML = price;
-		} catch (e) {
-			console.log('no encontrò elementeo');
-		}
 	}
 }

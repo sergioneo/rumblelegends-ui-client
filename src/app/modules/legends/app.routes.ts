@@ -3,12 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 
 const ROUTES: Routes = [
 	{
-		path: '',
-		loadChildren: './pages/home/home.module#HomeModule',
+		path: 'market',
+		loadChildren: './pages/market/market.module#MarketModule',
 		data: { preload: true },
 	},
 	{
-		path: 'market',
+		path: 'detail-market',
+		loadChildren: './pages/detail-market/detail-market.module#DetailMarketModule',
+		data: { preload: true },
+	},
+	{
+		path: '',
 		loadChildren: './pages/market/market.module#MarketModule',
 		data: { preload: true },
 	},

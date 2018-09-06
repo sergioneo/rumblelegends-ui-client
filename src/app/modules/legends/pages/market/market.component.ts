@@ -14,6 +14,7 @@ export class MarketComponent implements OnInit {
 		this.cardsProvider.getBeastsMarketPlace().subscribe(
 			(data) => {
 				this.cardsService = data.hits;
+				console.log(this.cardsService);
 			},
 			(err) => {
 				console.log(err);
