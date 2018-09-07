@@ -1,3 +1,128 @@
 avatar-component {
+  .title-avatar {
+    display: flex;
+    padding: 0 30px 0 30px;
+    &__title-left{
+      h1 {
+        color: #FFFFFF;
+        font-size: 2em;
+      }
+      flex: 1;
+    }
 
+    &__title-right {
+      display: flex;
+      flex-direction: column;
+      color: #FFFFFF;
+      font-style: normal;
+      font-weight: normal;
+      h2 {
+        font-size: 1em;
+        padding-top: 11px;
+      }
+      span {
+        font-size: 0.875em;
+        margin-top: -11px;
+      }
+    }
+  }
+
+  .line-top {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 20px;
+    }
+  }
+
+  .frame {
+    display: flex;
+    background-image: url("cross/assets/img/background_detail_market.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -2;
+    &__picture {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      &__animal {
+        z-index: 2;
+
+
+        @media (min-width: 1281px) {
+          img {
+            width: 354px;
+          }
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          img {
+            width: 250px;
+          }
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+          img {
+            width: 200px;
+          }
+        }
+      }
+
+      &__efect {
+        z-index: 1;
+        margin: -340px 67px 0px 0;
+      }
+
+      &__description-square {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__box {
+          margin: 10px;
+          &__title {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            margin: -63px 0 0 25px;
+
+            &__value{
+              font-size: 1.875em;
+            }
+
+            &__name{
+              font-size: 1.098125em
+            }
+          }
+        }
+
+      }
+    }
+
+    &__element, &__heart {
+      flex: 1;
+      text-align: center;
+      padding-top: 26px;
+      color: #FFFFFF;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.875em;
+    }
+
+    &__element {
+      display: flex;
+      flex-direction: column;
+    }
+    &__heart {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      &__content-picture {
+        padding-right: 7px;
+      }
+      span {
+        padding-top: 5px;
+      }
+    }
+  }
 }
