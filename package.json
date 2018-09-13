@@ -1,7 +1,7 @@
 {
   "name": "angular4-webpack-starter",
   "version": "0.0.1",
-  "description": "Angular4 Webpack Starter",
+  "description": "Rumble Legends",
   "main": "index.ts",
   "scripts": {
     "serve:local": "webpack-dev-server --config config/webpack.local.js --port 8097 --progress --colors",
