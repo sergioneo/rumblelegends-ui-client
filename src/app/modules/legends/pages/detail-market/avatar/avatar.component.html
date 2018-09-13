@@ -1,10 +1,10 @@
 <div class="title-avatar">
   <div class="title-avatar__title-left">
-    <h1>GOZILA</h1>
+    <h1>{{detail.name}}</h1>
   </div>
   <div class="title-avatar__title-right">
-    <h2>Pikachu</h2>
-    <span>Owner</span>
+    <!--<h2>Pikachu</h2>
+    <span>Owner</span>-->
   </div>
 </div>
 
@@ -23,7 +23,7 @@
 
     <div class="frame__picture">
       <div class="frame__picture__animal">
-        <img src="https://image-generator-beta.herokuapp.com/dinosaur/445100920694687959076" alt="">
+        <img *ngIf="detail.image_url" [src]="detail.image_url" [alt]="detail.name">
       </div>
       <div class="frame__picture__efect">
         <img src="cross/assets/img/efect-picture.png" alt="Efect Picture">
@@ -35,7 +35,7 @@
       <div class="frame__heart__content-picture">
         <img src="cross/assets/img/heart.png" alt="">
       </div>
-      <span>4759</span>
+      <span>{{detail.likes}}</span>
     </div>
   </div>
 
@@ -54,8 +54,8 @@
       <img src="cross/assets/img/detail-square.svg" alt="">
 
       <div class="frame__picture__description-square__box__title">
-        <span class="frame__picture__description-square__box__title__value">0</span>
-        <span class="frame__picture__description-square__box__title__name">Gen</span>
+        <span class="frame__picture__description-square__box__title__value">{{detail.pedigree}}</span>
+        <span class="frame__picture__description-square__box__title__name">Pedigree</span>
       </div>
 
     </div>
@@ -65,7 +65,7 @@
 
       <div class="frame__picture__description-square__box__title">
         <span class="frame__picture__description-square__box__title__value">0</span>
-        <span class="frame__picture__description-square__box__title__name">Gen</span>
+        <span class="frame__picture__description-square__box__title__name">Cooldown</span>
       </div>
 
     </div>
@@ -75,7 +75,7 @@
 
       <div class="frame__picture__description-square__box__title">
         <span class="frame__picture__description-square__box__title__value">0</span>
-        <span class="frame__picture__description-square__box__title__name">Gen</span>
+        <span class="frame__picture__description-square__box__title__name">Skill</span>
       </div>
 
     </div>
@@ -93,7 +93,7 @@
     <div class="current_price__left__content">
       <h3>Actual Price: </h3>
       <img src="cross/assets/img/icn_ethereum.svg" alt="Marco Card">
-      <span>0.000 / US $15</span>
+      <span>{{eth}} / US ${{usd}}</span>
     </div>
 
   </div>
@@ -104,27 +104,23 @@
   </div>
 </div>
 
-<div class="parents">
-
+<div class="parents" *ngIf="detail.sire">
   <div class="parents__title">
     <h3>Parents</h3>
     <div class="parents__title__line"></div>
   </div>
 
   <div class="parents__content">
-    <div class="parents__content__card">
-      <card-component [card]="item"></card-component>
+    <div class="parents__content__card" *ngIf="detail.sire.id">
+      <card-component [card]="detail.sire"></card-component>
     </div>
-    <div class="parents__content__card">
-      <card-component [card]="item"></card-component>
+    <div class="parents__content__card" *ngIf="detail.matron.id">
+      <card-component [card]="detail.matron"></card-component>
     </div>
   </div>
-
-
-
 </div>
-
-<!--<div class="graphic">
+<!--
+<div class="graphic">
   <div class="graphic__content">
     <div>Time left: 47:00</div>
     <div class="graphic__content__line"></div>

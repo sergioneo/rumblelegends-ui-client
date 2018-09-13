@@ -91,7 +91,9 @@ avatar-component {
             }
 
             &__name{
-              font-size: 1.098125em
+              font-size: 1.098125em;
+              border: 1px solid red;
+              display: flex;
             }
           }
         }

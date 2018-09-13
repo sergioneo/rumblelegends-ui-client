@@ -9,13 +9,17 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class CardsProvider {
-	constructor(public http: HttpClient) {}
+  constructor(public http: HttpClient) { }
 
-	public getBeastsMarketPlace(): Observable<any> {
-		return this.http.get(`${CONSTANTS.ENDPOINT}${CONSTANTS.SERVICE.MARKET_PLACE_BEASTS}`);
-	}
+  public getBeastsMarketPlace(): Observable<any> {
+    return this.http.get(`${CONSTANTS.ENDPOINT}${CONSTANTS.SERVICE.MARKET_PLACE_BEASTS}`);
+  }
 
-	public getPricing(url: string): Observable<any> {
-		return this.http.get(url);
-	}
+  public getDetailBeastsMarketPlace(id): Observable<any> {
+    return this.http.get(`${CONSTANTS.ENDPOINT}${CONSTANTS.SERVICE.DETAIL_MARKET_PLACE_BEASTS}/${id}`);
+  }
+
+  public getPricing(url: string): Observable<any> {
+    return this.http.get(url);
+  }
 }
