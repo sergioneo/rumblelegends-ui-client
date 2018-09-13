@@ -1,3 +1,76 @@
 footer-component {
+  .footer::after{
+    content: " ";
+    background-image: url("cross/assets/img/backgroud-footer.png");
+    background-position: bottom;
+    height: 320px;
+    z-index: -1;
+    width: 100%;
+    margin-top: -76px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 
+    @media (min-width: 960px) {
+      position: absolute;
+    }
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__menu::after {
+      content: " ";
+      background: #000;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+      display: block;
+      z-index: -1;
+    }
+
+    &__menu {
+      width: 300px;
+      height: 150px;
+      margin: 10px;
+      &__content {
+        z-index: 1;
+        position: absolute;
+        margin: 25px;
+
+        &__title {
+          color: #ffff;
+          font-weight: bold;
+          font-size: 1.25em;
+        }
+
+        &__first {
+          margin-top: 21px!important;
+        }
+
+        &__options {
+          display: flex;
+          width: 269px;
+          margin-top: 5px;
+          a {
+            flex: 1;
+            color: #4CD964;
+            font-size: 0.875em;
+            font-weight: normal;
+            text-decoration: none;
+          }
+        }
+      }
+      /*background-image: url("cross/assets/img/backgroud-footer.png");
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 37px;*/
+    }
+  }
 }

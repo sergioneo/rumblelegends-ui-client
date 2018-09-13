@@ -193,4 +193,50 @@ avatar-component {
       }
     }
   }
+
+  .parents{
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px 0 60px;
+
+    &__title {
+      width: 100%;
+      h3 {
+        font-size: 1.875em;
+        color: #4CD964;
+        font-weight: normal;
+      }
+      &__line {
+        border: 1px solid #FFFFFF;
+        margin-top: -10px;
+      }
+    }
+
+    &__content {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      &__card {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    /*
+
+
+
+    &__content {
+      flex: 1;
+      border: 1px solid red;
+
+    }*/
+
+    &__title {
+
+    }
+  }
 }
