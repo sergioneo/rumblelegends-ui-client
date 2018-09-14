@@ -50,6 +50,7 @@ market-component {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    cursor: pointer;
     &__active:after {
       position: absolute;
       content: " ";
@@ -66,7 +67,7 @@ market-component {
     span {
       color: #ffffff;
       font-size: 1.25em;
-      padding: 0 8px 0 8px;
+      padding: 0 8px 0 10px;
     }
   }
 }

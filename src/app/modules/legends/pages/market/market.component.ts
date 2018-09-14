@@ -1,6 +1,7 @@
 // Angular dependencies
 import { Component, OnInit } from '@angular/core';
 import { CardsProvider } from '../../providers';
+import CONSTANTS from '@legends/constants';
 
 @Component({
 	selector: 'market-component',
@@ -9,16 +10,27 @@ import { CardsProvider } from '../../providers';
 })
 export class MarketComponent implements OnInit {
 	private cardsService: Array<any> = [];
+	private totalPagination = Array(0);
+	private currentPage = 1;
 	constructor(private cardsProvider: CardsProvider) {}
 	public ngOnInit() {
-		this.cardsProvider.getBeastsMarketPlace().subscribe(
+		this.callService();
+	}
+
+	public callService() {
+		this.cardsProvider.getBeastsMarketPlace(this.currentPage).subscribe(
 			(data) => {
 				this.cardsService = data.hits;
-				console.log(this.cardsService);
+				this.totalPagination = Array(Math.ceil(data.found / CONSTANTS.COMMON.PAGINATION.TOTAL));
 			},
 			(err) => {
 				console.log(err);
 			}
 		);
+	}
+	public setCurrentPage(page) {
+		this.currentPage = page;
+		this.cardsService = [];
+		this.callService();
 	}
 }

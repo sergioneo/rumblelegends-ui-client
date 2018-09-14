@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 // Modules
 import { CommonModule } from '@angular/common';
-import { HeadertModule, TabsModule, CardModule, FooterModule } from '../../../cross';
+import { HeadertModule, TabsModule, CardModule, FooterModule, ElementsModule } from '../../../cross';
 
 // Components
 import { DetailMarketComponent } from './detail-market.component';
@@ -13,6 +13,15 @@ import { AvatarComponent } from './avatar/avatar.component';
 
 @NgModule({
 	declarations: [DetailMarketComponent, AvatarComponent],
-	imports: [CommonModule, DetailMarketRouter, HeadertModule, TabsModule, CardModule, AppModuleProviders, FooterModule],
+	imports: [
+		CommonModule,
+		DetailMarketRouter,
+		HeadertModule,
+		TabsModule,
+		CardModule,
+		AppModuleProviders,
+		FooterModule,
+		ElementsModule,
+	],
 })
 export class DetailMarketModule {}

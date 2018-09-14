@@ -22,13 +22,11 @@
 
 
 <div class="pager">
-  <span class="pager__active">1</span>
-  <span>2</span>
-  <span>3</span>
-  <span>4</span>
-  <span>5</span>
-  <span>6</span>
+  <span *ngFor="let item of totalPagination; let i = index" [attr.data-index]="i" [ngClass]="{'pager__active' : currentPage === (i+1)}"
+    (click)="setCurrentPage(i+1)">{{i+1}}</span>
 </div>
+
+
 
 
 <footer-component></footer-component>

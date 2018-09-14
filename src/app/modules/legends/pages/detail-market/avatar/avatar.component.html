@@ -15,10 +15,10 @@
 <div class="background-frame">
   <div class="frame">
     <div class="frame__element">
-      <div>
-        <img src="cross/assets/img/icn_element.png" alt="">
+      <div *ngIf="detail.element>-1">
+        <elements-component [idElement]="detail.element"></elements-component>
       </div>
-      <span>Fire</span>
+      <span>{{nameElement}}</span>
     </div>
 
     <div class="frame__picture">
