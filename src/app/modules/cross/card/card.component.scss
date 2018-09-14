@@ -1,6 +1,7 @@
 card-component {
   color: #ffff;
   .container-card {
+    cursor: pointer;
     width: 278px;
     &__content {
       &__single {

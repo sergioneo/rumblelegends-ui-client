@@ -8,7 +8,7 @@ const ROUTES: Routes = [
 		data: { preload: true },
 	},
 	{
-		path: 'detail-market',
+		path: 'detail-market/:id',
 		loadChildren: './pages/detail-market/detail-market.module#DetailMarketModule',
 		data: { preload: true },
 	},
