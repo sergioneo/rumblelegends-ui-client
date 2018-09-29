@@ -1,4 +1,94 @@
 card-component {
+  .container-card {
+    cursor: pointer;
+    &__background {
+      img {
+        width: 251px;
+        height: 278px;
+      }
+    }
+
+    &__best {
+      position: absolute;
+      margin-top: -202px;
+      margin-left: 50px;
+      img {
+        height: 172px;
+        width: 170px;
+      }
+    }
+
+    &__gen {
+      position: absolute;
+      margin-top: -269px;
+      margin-left: 130px;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 600;
+      span {
+        font-size: 16px;
+        font-weight: 300;
+        margin: -3px;
+      }
+    }
+
+    &__common {
+      position: absolute;
+      margin-top: -245px;
+      margin-left: 181px;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 600;
+      span {
+        font-size: 12px;
+        font-weight: normal;
+        position: absolute;
+        margin: -5px 0px 0px 5px;
+      }
+    }
+
+    &__element {
+      position: absolute;
+      margin-top: -200px;
+      margin-left: 216px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      img {
+        height: 30px;
+        width: 25px;
+      }
+
+      span {
+        margin: -5px 0px 0px 0px;
+      }
+    }
+
+    &__likes {
+      position: absolute;
+      margin-top: -130px;
+      margin-left: 216px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      img {
+        height: 19px;
+        width: 19px;
+      }
+
+      span {
+        margin: 5px 0px 0px 0px;
+      }
+    }
+  }
+}
+
+
+/*
   color: #ffff;
   .container-card {
     cursor: pointer;
@@ -72,4 +162,4 @@ card-component {
       }
     }
   }
-}
+*/

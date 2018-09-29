@@ -1,34 +1,29 @@
-<div class="container-card">
-  <div class="container-card__content" [routerLink]="['/detail-market', card.external_id]">
-    <div class="container-card__content__single">
-      <div class="container-card__content__single__background">
-        <img src="cross/assets/img/marco_card_single.png" alt="Marco Card">
-      </div>
-
-      <div class="container-card__content__single__element">
-        <elements-component [idElement]="card.element"></elements-component>
-      </div>
-      <div class="container-card__content__single__picture">
-        <img [src]="card.image_url" alt="Marco Card">
-      </div>
-
-
-
-      <div class="container-card__content__single__content-heart">
-        <img src="cross/assets/img/heart.png" alt="Marco Card">
-        <span>{{card.likes}}</span>
-      </div>
-
-      <div class="container-card__content__single__footer">
-        <span class="container-card__content__single__footer__name">{{card.name}}</span>
-        <div class="container-card__content__single__footer__price">
-          <img src="cross/assets/img/icn_ethereum.svg" alt="Marco Card">
-          <span>{{eth}}</span>
-          <span> / US ${{usd}}</span>
-        </div>
-      </div>
-    </div>
+<div class="container-card" [routerLink]="['/detail-market', card.external_id]">
+  <div class="container-card__background ">
+    <img src="cross/assets/img/marco_card.png " [alt]="card.name">
   </div>
 
+  <div class="container-card__best">
+    <img [src]="card.image_url " [alt]="card.name">
+  </div>
 
+  <div class="container-card__gen">
+    {{card.generation}}
+    <span>Gen</span>
+  </div>
+
+  <div class="container-card__common">
+    C
+    <span>Common</span>
+  </div>
+
+  <div class="container-card__element">
+    <elements-component [idElement]="card.element"></elements-component>
+    <span>{{nameElement}}</span>
+  </div>
+
+  <div class="container-card__likes">
+    <img src="cross/assets/img/heart.png" alt="Marco Card">
+    <span>{{card.likes}}</span>
+  </div>
 </div>
