@@ -43,6 +43,15 @@ avatar-component {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .background-frame::before {
+    content: " ";
+    background-image: url("cross/assets/img/relampagos.png");
+    width: 25px;
+    height: 25px;
+    border: 1px solid red;
+  }
+
   .frame {
     display: flex;
     &__picture {
