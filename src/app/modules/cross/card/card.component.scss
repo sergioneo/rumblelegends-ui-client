@@ -84,6 +84,27 @@ card-component {
         margin: 5px 0px 0px 0px;
       }
     }
+
+    &__footer {
+      display: flex;
+      margin: -23px 0 0px 12px;
+      color: #fff;
+      font-weight: 100;
+      &__name {
+        flex: 1;
+        font-size: 1.125em;
+      }
+
+      &__price{
+        flex: 1;
+        font-size: 1.125em;
+
+        img {
+          margin: 0px 0px 0px -15px;
+          position: absolute;
+        }
+      }
+    }
   }
 }
 

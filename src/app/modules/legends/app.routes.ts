@@ -17,6 +17,12 @@ const ROUTES: Routes = [
 		loadChildren: './pages/market/market.module#MarketModule',
 		data: { preload: true },
 	},
+
+	{
+		path: 'my-items',
+		loadChildren: './pages/my-items/my-items.module#MyItemsModule',
+		data: { preload: true },
+	},
 ];
 
 export const LegendsRouter = RouterModule.forChild(ROUTES);

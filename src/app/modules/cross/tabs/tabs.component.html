@@ -1,5 +1,4 @@
 <div class="fondo"></div>
 <div class="tabs">
-  <i class="tabs__active">Market</i>
-  <i>Auctions</i>
+  <i *ngFor="let item of configParams;" [class.tabs__active]="item.active" class="">{{item.name}}</i>
 </div>

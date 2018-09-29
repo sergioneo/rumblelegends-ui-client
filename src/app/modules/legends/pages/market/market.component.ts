@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CardsProvider } from '../../providers';
 import CONSTANTS from '@legends/constants';
+import { TabsInterface } from '../../../cross';
 
 @Component({
 	selector: 'market-component',
@@ -12,6 +13,18 @@ export class MarketComponent implements OnInit {
 	private cardsService: Array<any> = [];
 	private totalPagination = Array(0);
 	private currentPage = 1;
+
+	configParams: Array<TabsInterface> = [
+		{
+			name: 'Market',
+			active: true,
+		},
+		{
+			name: 'Auction',
+			active: false,
+		},
+	];
+
 	constructor(private cardsProvider: CardsProvider) {}
 	public ngOnInit() {
 		this.callService();
