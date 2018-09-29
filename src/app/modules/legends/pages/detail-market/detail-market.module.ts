@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 // Modules
 import { CommonModule } from '@angular/common';
-import { HeadertModule, TabsModule, CardModule, FooterModule, ElementsModule } from '../../../cross';
+import { HeadertModule, TabsModule, CardModule, FooterModule, ElementsModule, ButtonsModule } from '../../../cross';
 
 // Components
 import { DetailMarketComponent } from './detail-market.component';
@@ -22,6 +22,7 @@ import { AvatarComponent } from './avatar/avatar.component';
 		AppModuleProviders,
 		FooterModule,
 		ElementsModule,
+		ButtonsModule,
 	],
 })
 export class DetailMarketModule {}

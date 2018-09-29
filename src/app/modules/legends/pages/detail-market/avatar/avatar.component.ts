@@ -39,4 +39,8 @@ export class AvatarComponent implements OnInit {
 			(err) => {}
 		);
 	}
+
+	public buyNow() {
+		console.log('entro');
+	}
 }
