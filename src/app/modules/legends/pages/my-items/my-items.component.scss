@@ -1,3 +1,11 @@
 my-items-component {
+  .lists-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+    card-component {
+      margin: 20px;
+    }
+  }
 }

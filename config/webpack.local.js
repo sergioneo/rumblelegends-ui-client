@@ -72,12 +72,10 @@ let config = {
       disable: false,
     }),
 
-    new copy([
-      {
-        context: './public',
-        from: '**/*',
-      },
-    ]),
+    new copy([{
+      context: './public',
+      from: '**/*',
+    }, ]),
 
     new copy(
       (() => {
@@ -134,8 +132,7 @@ let config = {
 
     new webpack.HotModuleReplacementPlugin(),
 
-    new assethtml([
-      {
+    new assethtml([{
         filepath: path.resolve(__dirname, `../dist/${dll.resolveFile('polyfills')}`),
       },
       {
@@ -174,11 +171,9 @@ let config = {
     new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /es/),
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.ts$/,
-        use: [
-          {
+        use: [{
             loader: '@angularclass/hmr-loader',
           },
           {
@@ -212,8 +207,7 @@ let config = {
         test: /\.scss$/,
         loader: ['to-string-loader'].concat(
           extract.extract({
-            use: [
-              {
+            use: [{
                 loader: 'css-loader',
                 options: {
                   sourceMap: true,
@@ -293,6 +287,16 @@ let config = {
       '/marketplace/**': {
         target: {
           host: 'beast-service-beta.herokuapp.com',
+          protocol: 'https:',
+          port: 443,
+        },
+        changeOrigin: true,
+        secure: false,
+        logLevel: 'info',
+      },
+      '/wallet/**': {
+        target: {
+          host: 'beast-wallet-beta.herokuapp.com',
           protocol: 'https:',
           port: 443,
         },

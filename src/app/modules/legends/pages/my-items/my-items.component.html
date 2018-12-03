@@ -7,4 +7,8 @@
 
 <tabs-component [configParams]="configParams"></tabs-component>
 
+<div class="lists-cards">
+  <card-component *ngFor="let item of cardsService;" [card]="item"></card-component>
+</div>
+
 <footer-component></footer-component>
