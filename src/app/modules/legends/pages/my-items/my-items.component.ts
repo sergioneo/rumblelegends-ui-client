@@ -28,8 +28,7 @@ export class MyItemsComponent implements OnInit {
   constructor(private cardsProvider: CardsProvider) { }
   public ngOnInit() {
     this.cardsProvider.getMyItems('a82e08f41e958514c74959c5876dfea5f539b6ca').subscribe(data => {
-      this.cardsService = JSON.parse(data.beasts).hits;
-      console.log(this.cardsService);
+      this.cardsService = data.beasts;
     }, err => console.log(err))
   }
 }
