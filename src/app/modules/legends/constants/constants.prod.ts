@@ -8,7 +8,7 @@ const configProd = Object.assign(
     COMMON,
     TIMEOUT: 20000,
     ENDPOINT: 'https://beast-service-beta.herokuapp.com/',
-    ENDPOINT_WALLET: 'beast-wallet-beta.herokuapp.com/',
+    ENDPOINT_WALLET: 'https://beast-wallet-beta.herokuapp.com/',
     EGGS: [{
       name: 1,
       path: 'cross/assets/img/eggs/uni_egg.gif'
