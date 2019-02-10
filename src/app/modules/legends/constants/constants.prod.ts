@@ -64,6 +64,7 @@ const configProd = Object.assign(
       ETHER_CLP_DOLAR: 'https://api.coinmarketcap.com/v2/ticker/1027/?convert=CLP',
       MARKET_PLACE_BEASTS: 'beast/marketplace',
       DETAIL_MARKET_PLACE_BEASTS: 'beast',
+      MY_ITEMS: 'wallet',
     },
     SERVICES_ERRORS: [
       {
