@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 // Modules
 import { CommonModule } from '@angular/common';
-import { HeadertModule, TabsModule, CardModule, FooterModule } from '../../../cross';
+import { HeadertModule, TabsModule, CardModule, FooterModule, ButtonsModule } from '../../../cross';
 
 // Components
 
@@ -12,7 +12,7 @@ import { MyItemsComponent } from './my-items.component';
 import { MyItemsRouter } from './my-items.router';
 
 @NgModule({
-	declarations: [MyItemsComponent],
-	imports: [CommonModule, HeadertModule, TabsModule, CardModule, AppModuleProviders, FooterModule, MyItemsRouter],
+  declarations: [MyItemsComponent],
+  imports: [CommonModule, HeadertModule, TabsModule, CardModule, AppModuleProviders, FooterModule, MyItemsRouter, ButtonsModule],
 })
-export class MyItemsModule {}
+export class MyItemsModule { }

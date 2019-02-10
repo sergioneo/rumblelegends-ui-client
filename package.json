@@ -52,7 +52,7 @@
     "method-override": "^2.3.10",
     "path": "^0.12.7",
     "rxjs": "^5.5.2",
-    "web3": "github:ethereum/web3.js"
+    "web3": "^0.20.7"
   },
   "devDependencies": {
     "@angular/cli": "^1.7.4",

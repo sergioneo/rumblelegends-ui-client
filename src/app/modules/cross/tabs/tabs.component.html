@@ -1,4 +1,4 @@
 <div class="fondo"></div>
 <div class="tabs">
-  <i *ngFor="let item of configParams;" [class.tabs__active]="item.active" class="">{{item.name}}</i>
+  <i *ngFor="let item of configParams;" [class.tabs__active]="item.active" class="" (click)="setTabs(item)">{{item.name}}</i>
 </div>

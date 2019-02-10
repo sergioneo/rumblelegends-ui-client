@@ -5,10 +5,25 @@
   <h1>My items</h1>
 </div>
 
-<tabs-component [configParams]="configParams"></tabs-component>
+<tabs-component [configParams]="configParams" (active)="activeTab($event)"></tabs-component>
 
-<div class="lists-cards">
+<div class="lists-cards" *ngIf="tab === 'Characters'">
   <card-component *ngFor="let item of cardsService;" [card]="item"></card-component>
+
+</div>
+
+<div *ngIf="tab === 'Eggs'">
+  <div class="buttons-eggs">
+    <buttons-component name='OPEN ALL AT ONCE' [callback]="buyNow"></buttons-component>
+  </div>
+  <div class="lists-cards">
+    <div *ngFor="let obj of eggs;" class="lists-cards__eggs">
+      <div class="lists-cards__eggs__content">
+        <img [src]="obj.path" alt="Eggs">
+        <span>Quanttity: {{obj.total}}</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <footer-component></footer-component>

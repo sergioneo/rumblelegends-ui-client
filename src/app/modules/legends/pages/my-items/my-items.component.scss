@@ -1,4 +1,15 @@
 my-items-component {
+  .buttons-eggs {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    h3, span {
+      font-size: 1.875em;
+      font-weight: 200;
+    }
+  }
+
   .lists-cards {
     display: flex;
     flex-wrap: wrap;
@@ -7,5 +18,23 @@ my-items-component {
     card-component {
       margin: 20px;
     }
+
+    &__eggs {
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &__content {
+        position: relative;
+        margin-top: 30px;
+        span {
+          position: absolute;
+          margin-left: -37px;
+          color: #fff;
+          font-size: 1.375em;
+        }
+      }
+    }
+
   }
 }

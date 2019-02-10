@@ -14,8 +14,8 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS];
 require('web3');
 
 @NgModule({
-	imports: [LegendsRouter, LegendsModelModule, AppModuleWebKit],
-	declarations: [],
-	providers: [APP_PROVIDERS],
+  imports: [LegendsRouter, LegendsModelModule, AppModuleWebKit],
+  declarations: [],
+  providers: [APP_PROVIDERS],
 })
-export class AppModuleBip {}
+export class AppModuleBip { }

@@ -19,10 +19,10 @@ export class MarketComponent implements OnInit {
       name: 'Market',
       active: true,
     },
-    {
+    /*{
       name: 'Auction',
       active: false,
-    },
+    },*/
   ];
 
   constructor(private cardsProvider: CardsProvider) { }
